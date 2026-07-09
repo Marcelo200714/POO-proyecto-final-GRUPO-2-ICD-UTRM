@@ -6,8 +6,7 @@ DHT22 (real o simulado), calcula un nivel de riesgo, guarda el historial en JSON
 modelo de Machine Learning que predice la siguiente lectura.
 
 Proyecto final del curso **POO Avanzado** — Universidad Nacional Toribio Rodríguez de Mendoza
-de Amazonas (UNTRM). El detalle técnico completo (diseño, conceptos de POO, pruebas) está en
-[`INFORME.md`](INFORME.md).
+de Amazonas (UNTRM).
 
 ## Requisitos
 
@@ -33,8 +32,8 @@ Si vas a usar el DHT22 físico en vez del modo simulado:
 2. Abre [`esp8266_dht22.ino`](esp8266_dht22.ino) en el Arduino IDE y súbelo al ESP8266
    (selecciona la placa y el puerto correctos en Herramientas).
 3. Deja el ESP8266 conectado por USB a la PC. **No hace falta WiFi**: se descartó a propósito
-   porque el radio del ESP8266 interfiere con la lectura del DHT22 (detalle en `INFORME.md`,
-   sección 8, Caso 8). El ESP8266 solo necesita quedar conectado por cable.
+   porque el radio del ESP8266 interfiere con la lectura del DHT22. El ESP8266 solo necesita
+   quedar conectado por cable.
 4. Cierra el Monitor Serie del Arduino IDE antes de correr `proyecto2.0.py` — si lo dejas
    abierto, se queda dueño del puerto y Python no podrá conectarse (`PermissionError`).
 
@@ -78,5 +77,4 @@ Aparece un menú con 9 opciones:
 proyecto2.0.py       → programa principal (Python)
 esp8266_dht22.ino    → firmware del ESP8266 (Arduino/C++), solo necesario si usas el sensor real
 requirements.txt     → dependencias de Python
-INFORME.md           → informe técnico completo del proyecto
 ```
